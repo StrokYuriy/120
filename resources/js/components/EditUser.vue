@@ -28,7 +28,7 @@ export default {
     },
     async created() {
         const response = await axios.get(`/api/users/${this.$route.params.id}`);
-        this.usert = response.data;
+        this.user = response.data;
     },
     methods: {
         async updateUser() {
